@@ -38,3 +38,10 @@ npx serve . -p 5500
 ## Licença
 
 Uso pessoal para portfólio acadêmico.
+
+## Publicação
+
+- GitHub Pages: Settings → Pages → Deploy from a branch → `main` e pasta `/ (root)`. URL: `https://leoik0.github.io/atividadeAVA/`.
+- Netlify/Vercel: importe o repositório e use diretório de saída `./`.
+
+No ZIP, há o atalho `Abrir Online.url` que abre a página publicada.
