@@ -1,44 +1,90 @@
-.interview-card {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
+@media print {
+  /* PDF em preto e branco com fundo branco */
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+  html, body {
+    overflow: visible !important;
+    background: #ffffff !important;
+    color: #000000 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  /* Esconder controles interativos durante a impressão */
+  .btn.print,
+  .nav-toggle {
+    display: none !important;
+  }
+  /* Componentes com fundo branco e texto preto */
+  .site-header,
+  .top-info,
+  .section,
+  .section.alt,
+  .card,
+  .keyword-content,
+  .footer,
+  .interview-card {
+    background: #ffffff !important;
+    color: #000000 !important;
+    box-shadow: none !important;
+    border-color: #dddddd !important;
+  }
+  .menu a,
+  .faq-question,
+  .faq-answer,
+  .keyword,
+  .badge {
+    color: #000000 !important;
+  }
+  .badge,
+  .keyword,
+  .card {
+    border: 1px solid #bfbfbf !important;
+    background: #ffffff !important;
+  }
+  /* Remover gradientes/transparências visuais na impressão */
+  body {
+    background-image: none !important;
+  }
+  .section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  .page-break {
+    page-break-before: always;
+    break-before: page;
+  }
 }
-.interview-header {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.interview-name {
-  font-weight: 700;
-  line-height: 1.2;
-}
-.interview-role {
-  color: var(--muted);
-  line-height: 1.5;
-}
-/* Base */
 :root {
-  --bg: #0f1220;
-  --bg-alt: #12162a;
-  --text: #e6e9ef;
-  --muted: #b8c0cc;
-  --primary: #6ee7ff;
-  --primary-contrast: #0b1020;
-  --card: #1a1f36;
-  --border: #2a314a;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
-}
-
-* {
-  box-sizing: border-box;
-}
-html,
-body {
-  height: 100%;
+  --bg: #0b1220;
+  --bg-alt: #0f1628;
+  --text: #e8edf7;
+  --muted: #a7b0c3;
+  --primary: #0066ff;
+  --primary-contrast: #ffffff;
+  --card: #111a2e;
+  --border: #23314d;
+  --shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 body {
-  margin: 0;
-  font-family: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text);
+  background: radial-gradient(
+      1200px 600px at 10% -10%,
+      rgba(110, 231, 255, 0.15),
+      transparent
+    ),
+    radial-gradient(
+      1200px 600px at 90% 0%,
+      rgba(110, 231, 255, 0.08),
+      transparent
+    ),
+    var(--bg);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
     Cantarell, "Helvetica Neue", Arial, sans-serif;
   color: var(--text);
   background: radial-gradient(
