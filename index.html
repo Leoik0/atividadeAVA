@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfólio – Atividade da Faculdade</title>
+    <meta
+      name="description"
+      content="Landing page da atividade acadêmica com objetivos, tecnologias, resultados e links."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎓</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="top-info">
+        <div class="container top-info-wrap">
+          <div class="line1">
+            <span class="icon material-symbols-rounded" aria-hidden="true"
+              >school</span
+            >Centro Universitário Leonardo da Vinci - UNIASSELVI
+          </div>
+          <div class="line2">
+            <span class="icon material-symbols-rounded" aria-hidden="true"
+              >menu_book</span
+            >Imersão Profissional: Desafios Contemporâneos
+          </div>
+          <div class="line3 badges">
+            <span class="badge academico"
+              ><span class="icon material-symbols-rounded" aria-hidden="true"
+                >person</span
+              >Acadêmico: Leonardo Oliveira</span
+            >
+            <span class="badge turma"
+              ><span class="icon material-symbols-rounded" aria-hidden="true"
+                >sell</span
+              >Turma: FLD6661657CET</span
+            >
+            <span class="badge mediadora"
+              ><span class="icon material-symbols-rounded" aria-hidden="true"
+                >co_present</span
+              >Mediadora: Sandra Cavichiolo</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container header-wrap">
+        <a class="brand" href="#hero" aria-label="Início"
+          >Portfólio Acadêmico</a
+        >
+        <nav class="nav" aria-label="Navegação principal">
+          <button class="nav-toggle" aria-expanded="false" aria-controls="menu">
+            ☰
+          </button>
+          <ul id="menu" class="menu">
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#fichamento">Fichamento</a></li>
+            <li><a href="#entrevista">Entrevista</a></li>
+            <li><a href="#footer">Footer</a></li>
+          </ul>
+        </nav>
+        <button id="downloadPdf" class="btn ghost" aria-label="Baixar PDF">
+          <span class="material-symbols-rounded" aria-hidden="true"
+            >download</span
+          >
+          Baixar PDF
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="introducao" class="section center">
+        <div class="container grid-2">
+          <div>
+            <h2>
+              <span class="material-symbols-rounded" aria-hidden="true"
+                >menu_book</span
+              >
+              Introdução
+            </h2>
+            <p>
+              Este portfólio reúne uma reflexão aprofundada sobre competências
+              comportamentais (soft skills) e técnicas (hard skills) no cenário
+              atual do trabalho, tomando como referência o estudo acadêmico de
+              Reis et al. (2022) e sendo enriquecido por uma entrevista com um
+              profissional de tecnologia.
+            </p>
+            <div class="grid-2">
+              <div class="card border-animated">
+                <h3>Objetivo</h3>
+                <p>
+                  Investigar como habilidades técnicas e comportamentais
+                  influenciam a seleção de candidatos, articulando evidências
+                  acadêmicas com práticas correntes do mercado.
+                </p>
+              </div>
+              <div class="card border-animated">
+                <h3>Metodologia</h3>
+                <p>
+                  Síntese crítica do artigo científico somada a uma entrevista
+                  semi-estruturada com profissional de tecnologia, assegurando
+                  triangulação entre fontes e perspectivas.
+                </p>
+              </div>
+            </div>
+            <div class="keywords">
+              <h3 class="keywords-title">
+                <span class="material-symbols-rounded" aria-hidden="true"
+                  >bookmark</span
+                >
+                Conceitos‑chave
+              </h3>
+              <div class="keyword-row">
+                <div class="keyword-item">
+                  <button
+                    class="keyword pill hard"
+                    aria-expanded="false"
+                    aria-controls="kw-hard"
+                  >
+                    <span class="material-symbols-rounded" aria-hidden="true"
+                      >build</span
+                    >
+                    Hard Skill
+                    <span
+                      class="chevron material-symbols-rounded"
+                      aria-hidden="true"
+                      >expand_more</span
+                    >
+                  </button>
+                  <div id="kw-hard" class="keyword-content" hidden>
+                    <p>
+                      Competências técnicas objetivas e mensuráveis, como
+                      domínio de linguagens, ferramentas, metodologias e
+                      certificações formais.
+                    </p>
+                  </div>
+                </div>
+                <div class="keyword-item">
+                  <button
+                    class="keyword pill soft"
+                    aria-expanded="false"
+                    aria-controls="kw-soft"
+                  >
+                    <span class="material-symbols-rounded" aria-hidden="true"
+                      >diversity_3</span
+                    >
+                    Soft Skill
+                    <span
+                      class="chevron material-symbols-rounded"
+                      aria-hidden="true"
+                      >expand_more</span
+                    >
+                  </button>
+                  <div id="kw-soft" class="keyword-content" hidden>
+                    <p>
+                      Habilidades comportamentais e sociais, como comunicação,
+                      colaboração, adaptabilidade, empatia e gestão do tempo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="fichamento" class="section alt">
+        <div class="container">
+          <h2>Fichamento</h2>
+          <div class="flex" style="margin-top: 16px">
+            <div class="card border-animated flex-grow-1">
+              <h3>Referência Bibliográfica</h3>
+              <p>
+                REIS, Ana; MEDEIROS, André; WALTER, Cicero Eduardo; COSTA, Luís;
+                AU-YONG-OLIVEIRA, Manuel. Um estudo de metodologia mista sobre
+                soft e hard skills: a perspetiva dos estudantes e de empresa
+                contratadora. Iciemc, n. 3, p. 210–218, 2022. DOI:
+                10.34624/iciemc.v0i3.29770.
+              </p>
+            </div>
+          </div>
+          <div class="grid-2" style="margin-top: 16px">
+            <div class="card border-animated">
+              <h3>Título</h3>
+              <p>
+                Um estudo de metodologia mista sobre soft e hard skills: a
+                perspetiva dos estudantes e de empresa contratadora
+              </p>
+            </div>
+            <div class="card border-animated">
+              <h3>Autores</h3>
+              <p>
+                Ana Reis, André Medeiros, Cicero Eduardo Walter, Luís Costa,
+                Manuel Au-Yong-Oliveira
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex"
+            style="margin-top: 16px; flex-direction: column; gap: 16px"
+          >
+            <div class="card border-animated flex-grow-1">
+              <h3>Palavras‑chave</h3>
+              <div class="badges" style="margin-top: 8px">
+                <span
+                  class="badge clean"
+                  data-tip="Conjunto de habilidades de um profissional"
+                  >Competências</span
+                >
+                <span
+                  class="badge clean"
+                  data-tip="Processo contínuo de aprimoramento de habilidades"
+                  >Desenvolvimento</span
+                >
+                <span
+                  class="badge clean"
+                  data-tip="Habilidades técnicas e mensuráveis"
+                  >Hard Skills</span
+                >
+                <span
+                  class="badge clean"
+                  data-tip="Processo de atração e seleção de candidatos"
+                  >Recrutamento</span
+                >
+                <span
+                  class="badge clean"
+                  data-tip="Habilidades comportamentais e sociais"
+                  >Soft Skills</span
+                >
+                <span
+                  class="badge clean"
+                  data-tip="Área que gerencia pessoas nas organizações"
+                  >Recursos Humanos</span
+                >
+              </div>
+            </div>
+            <div class="card border-animated flex-grow-1">
+              <h3>Objeto de Estudo</h3>
+              <p>
+                A pesquisa investiga como estudantes universitários e uma
+                profissional de RH avaliam a importância das soft e hard skills
+                hoje e no futuro do trabalho, analisando como essas competências
+                são reconhecidas, valorizadas e vinculadas às práticas de
+                recrutamento e seleção.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-top: 16px">
+            <div class="card border-animated">
+              <h3>Principais Resultados</h3>
+              <ol class="list">
+                <li>
+                  Estudantes atribuem valor às duas dimensões; tendência aponta
+                  maior protagonismo das soft skills nos próximos anos.
+                </li>
+                <li>
+                  A profissional de RH destaca que o mercado privilegia o
+                  equilíbrio entre competências técnicas e comportamentais.
+                </li>
+                <li>
+                  Convergência entre literatura, estudantes e recrutadora sobre
+                  a relevância crescente de criatividade, comunicação, trabalho
+                  em equipe e adaptabilidade.
+                </li>
+              </ol>
+            </div>
+            <div class="card border-animated">
+              <h3>Autores mais citados</h3>
+              <ul class="list">
+                <li>Ribeiro (2017)</li>
+                <li>Travassos (2019)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="roteiro-entrevista" class="section">
+        <div class="container">
+          <h2>Roteiro da Entrevista</h2>
+          <div class="card border-animated interview-card">
+            <div class="interview-header">
+              <div class="avatar">
+                <span class="material-symbols-rounded" aria-hidden="true"
+                  >person</span
+                >
+              </div>
+              <span class="interview-name">luis suares</span>
+            </div>
+            <div class="interview-role">
+              Engenheiro de Software backend, cria serviços escaláveis, integra
+              bancos de dados e garante observabilidade e desempenho em
+              ambientes cloud.
+            </div>
+          </div>
+
+          <div class="card border-animated faq">
+            <h3>Perguntas e Respostas</h3>
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-1"
+              >
+                <span class="label"
+                  ><span class="number">1.</span> O que sua empresa prioriza ao
+                  contratar? Houve mudanças recentes nos critérios?</span
+                >
+                <span
+                  class="material-symbols-rounded chevron"
+                  aria-hidden="true"
+                  >expand_more</span
+                >
+              </button>
+              <div id="faq-1" class="faq-answer" hidden>
+                <p>
+                  Hoje, buscamos alinhamento entre cultura e domínio técnico.
+                  Nos últimos anos, comunicação e colaboração ganharam maior
+                  peso junto às habilidades práticas.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-2"
+              >
+                <span class="label"
+                  ><span class="number">2.</span> Soft skills superam hard
+                  skills?</span
+                >
+                <span
+                  class="material-symbols-rounded chevron"
+                  aria-hidden="true"
+                  >expand_more</span
+                >
+              </button>
+              <div id="faq-2" class="faq-answer" hidden>
+                <p>
+                  Depende da função: liderança técnica exige forte comunicação e
+                  influência; já posições especialistas demandam profundidade
+                  técnica. O equilíbrio é o diferencial.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-3"
+              >
+                <span class="label"
+                  ><span class="number">3.</span> Onde se valorizam mais soft e
+                  hard skills?</span
+                >
+                <span
+                  class="material-symbols-rounded chevron"
+                  aria-hidden="true"
+                  >expand_more</span
+                >
+              </button>
+              <div id="faq-3" class="faq-answer" hidden>
+                <p>
+                  Soft skills: gestão, produto e liderança. Hard skills:
+                  engenharia de dados, segurança e especialidades de
+                  infraestrutura.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-4"
+              >
+                <span class="label"
+                  ><span class="number">4.</span> Três conhecimentos mais
+                  valorizados no recrutamento e seleção?</span
+                >
+                <span
+                  class="material-symbols-rounded chevron"
+                  aria-hidden="true"
+                  >expand_more</span
+                >
+              </button>
+              <div id="faq-4" class="faq-answer" hidden>
+                <p>
+                  Arquitetura de sistemas, comunicação clara entre áreas e
+                  fundamentos de segurança. A combinação indica maturidade
+                  técnica e colaboração.
+                </p>
+              </div>
+            </div>
+            <br />
+            <div class="faq-item">
+              <button
+                class="faq-question"
+                aria-expanded="false"
+                aria-controls="faq-5"
+              >
+                <span class="label"
+                  ><span class="number">5.</span> Impacto da Inteligência
+                  Artificial nas competências?</span
+                >
+                <span
+                  class="material-symbols-rounded chevron"
+                  aria-hidden="true"
+                  >expand_more</span
+                >
+              </button>
+              <div id="faq-5" class="faq-answer" hidden>
+                <p>
+                  A IA amplia produtividade e exige nova alfabetização
+                  tecnológica; pensamento crítico e ética tornam-se essenciais
+                  ao lado de domínio de ferramentas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="grid-2" style="margin-top: 18px;">
+            <div class="card border-animated">
+              <h3>Análise da Entrevista</h3>
+              <p>
+                Observa-se forte alinhamento com os resultados de Reis et al. (2022):
+                o entrevistado ressalta mudanças recentes — aceleradas pela pandemia —
+                em que as soft skills passaram a ter peso comparável às capacidades técnicas.
+              </p>
+              <p>
+                Ganha destaque o "fit cultural": compatibilidade de valores entre pessoa e organização,
+                fator cada vez mais decisivo nos processos seletivos contemporâneos.
+              </p>
+              <p>
+                Sobre Inteligência Artificial, a reflexão aponta que, à medida que atividades técnicas se automatizam,
+                competências comportamentais tornam-se ainda mais diferenciais competitivos.
+              </p>
+            </div>
+            <div class="card border-animated">
+              <h3>Considerações Finais</h3>
+              <p>
+                A leitura do artigo, somada à entrevista, indica que o equilíbrio
+                entre habilidades técnicas e comportamentais é um pilar do sucesso profissional atual.
+              </p>
+              <ol class="list">
+                <li>
+                  <strong>Equilíbrio:</strong> combinação de técnica e comportamento supera especialização isolada.
+                </li>
+                <li>
+                  <strong>Adaptação:</strong> evolução constante do mercado exige flexibilidade e aprendizado contínuo.
+                </li>
+                <li>
+                  <strong>Futuro:</strong> com o avanço da IA, soft skills tendem a ganhar ainda mais protagonismo.
+                </li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="card border-animated" style="margin-top: 18px;">
+            <h3>Reflexão Final</h3>
+            <p>
+              O estudo reforça a relevância de uma formação integral: além da base técnica,
+              é essencial cultivar habilidades interpessoais e de autogestão. O profissional de destaque
+              reúne excelência técnica com inteligência emocional, comunicação clara e alta capacidade de adaptação
+              às transformações constantes do mercado.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="site-footer">
+      <div class="container footer-wrap">
+        <small
+          >© 2025 Portfólio AVA — Atividade da Faculdade • 2025/2 • Análise e
+          Desenvolvimento de Sistemas</small
+        >
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
